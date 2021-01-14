@@ -1,0 +1,58 @@
+﻿<Window x:Class="WpfApp_Animation.TestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp_Animation"
+        mc:Ignorable="d"
+        Title="TestWindow" Height="450" Width="800">
+    <Window.Resources>
+        <!--<Style TargetType="Button">
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                --><!--动画，Duration：动画持续时间， Storyboard.TargetProperty：指定动画应用的属性，To：动画结束的值--><!--
+                                <DoubleAnimation Duration="0:0:0.5" Storyboard.TargetProperty="FontSize" To="30" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation From="0" To="150" Duration="0:0:3" Storyboard.TargetProperty="Width"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>-->
+        <Storyboard x:Key="Loading">
+            <!--<ThicknessAnimation Duration="0:0:0.3" To="0" From="0,300,0,300" Storyboard.TargetName="btn" Storyboard.TargetProperty="Margin" />-->
+            <DoubleAnimation Duration="0:0:0.5" Storyboard.TargetName="btn" Storyboard.TargetProperty="FontSize" To="30" />
+            <DoubleAnimation From="0" To="150" Duration="0:1:0" Storyboard.TargetName="btn" Storyboard.TargetProperty="Width"/>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger  RoutedEvent="Loaded" >
+            <BeginStoryboard Storyboard="{StaticResource Loading}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <Button x:Name="btn" Content="我爱宝贝" Width="120" Height="60" Foreground="Red"/>
+
+        <Rectangle Fill="Blue" Width="50" Height="50" HorizontalAlignment="Right">
+            <Rectangle.RenderTransform>
+                <RotateTransform x:Name="rect" Angle="0" CenterX="25" CenterY="25"/>
+            </Rectangle.RenderTransform>
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="Mouse.MouseMove">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation AutoReverse="True" RepeatBehavior="9" Duration="0:0:2" From="0" To="360" Storyboard.TargetName="rect" Storyboard.TargetProperty="Angle"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+    </Grid>
+</Window>

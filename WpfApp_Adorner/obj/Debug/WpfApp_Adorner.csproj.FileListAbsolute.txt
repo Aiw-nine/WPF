@@ -1,0 +1,17 @@
+D:\vs-work\WpfApp_Adorner\bin\Debug\WpfApp_Adorner.exe.config
+D:\vs-work\WpfApp_Adorner\bin\Debug\WpfApp_Adorner.exe
+D:\vs-work\WpfApp_Adorner\bin\Debug\WpfApp_Adorner.pdb
+D:\vs-work\WpfApp_Adorner\obj\Debug\WpfApp_Adorner.csprojAssemblyReference.cache
+D:\vs-work\WpfApp_Adorner\obj\Debug\MainWindow.g.cs
+D:\vs-work\WpfApp_Adorner\obj\Debug\App.g.cs
+D:\vs-work\WpfApp_Adorner\obj\Debug\WpfApp_Adorner_MarkupCompile.cache
+D:\vs-work\WpfApp_Adorner\obj\Debug\WpfApp_Adorner_MarkupCompile.lref
+D:\vs-work\WpfApp_Adorner\obj\Debug\MainWindow.baml
+D:\vs-work\WpfApp_Adorner\obj\Debug\WpfApp_Adorner.g.resources
+D:\vs-work\WpfApp_Adorner\obj\Debug\WpfApp_Adorner.Properties.Resources.resources
+D:\vs-work\WpfApp_Adorner\obj\Debug\WpfApp_Adorner.csproj.GenerateResource.cache
+D:\vs-work\WpfApp_Adorner\obj\Debug\WpfApp_Adorner.csproj.CoreCompileInputs.cache
+D:\vs-work\WpfApp_Adorner\obj\Debug\WpfApp_Adorner.exe
+D:\vs-work\WpfApp_Adorner\obj\Debug\WpfApp_Adorner.pdb
+D:\vs-work\WpfApp_Adorner\obj\Debug\TwoWindow.g.cs
+D:\vs-work\WpfApp_Adorner\obj\Debug\TwoWindow.baml
